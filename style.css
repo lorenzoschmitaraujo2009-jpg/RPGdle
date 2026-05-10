@@ -1,1 +1,83 @@
+body {
+  margin: 0;
+  font-family: Georgia, serif;
+  background: linear-gradient(to bottom, #000, #0f172a, #020617);
+  color: white;
+}
 
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 30px;
+}
+
+h1 {
+  text-align: center;
+  color: gold;
+  font-size: 4rem;
+}
+
+p {
+  text-align: center;
+}
+
+.search-box {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+input {
+  flex: 1;
+  padding: 15px;
+  border-radius: 12px;
+  border: none;
+  font-size: 1rem;
+}
+
+button {
+  padding: 15px 20px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  background: green;
+  color: white;
+  font-size: 1.2rem;
+}
+
+#suggestions button {
+  width: 100%;
+  margin: 2px 0;
+  background: #1e293b;
+}
+
+.header-grid,
+.guess-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.header-grid div,
+.guess-row div {
+  padding: 12px;
+  border-radius: 10px;
+}
+
+.green { background: green; }
+.red { background: darkred; }
+.yellow { background: goldenrod; }
+
+.hidden {
+  display: none;
+}
+
+#winMessage {
+  text-align: center;
+  background: darkgreen;
+  padding: 20px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
