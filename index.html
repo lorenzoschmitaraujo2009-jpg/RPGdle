@@ -1,1 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RPGdle</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>RPGdle</h1>
+    <p>Descubra o personagem do dia</p>
 
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="Digite o nome de um personagem...">
+      <button id="guessButton">✓</button>
+    </div>
+
+    <div id="suggestions"></div>
+
+    <div id="winMessage" class="hidden">
+      <h2>🎉 Você ganhou! 🎉</h2>
+      <p id="winnerName"></p>
+      <button onclick="resetGame()">Jogar Novamente</button>
+    </div>
+
+    <div class="header-grid">
+      <div>Nome</div>
+      <div>Raça</div>
+      <div>Reino</div>
+      <div>Status</div>
+    </div>
+
+    <div id="guessesContainer"></div>
+  </div>
+
+  <script src="characters.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
