@@ -1,65 +1,28 @@
-body {
-  margin: 0;
-  font-family: Georgia, serif;
-  background: linear-gradient(to bottom, #000, #0f172a, #020617);
-  color: white;
-}
-.container {
-  max-width: 1100px;
-  margin: auto;
-  padding: 30px;
-}
-h1 {
-  text-align: center;
-  color: gold;
-  font-size: 4rem;
-  letter-spacing: 4px;
-}
-p { text-align: center; }
-.search-box {
-  display: flex;
-  gap: 10px;
-  margin-bottom: 10px;
-}
-input {
-  flex: 1;
-  padding: 15px;
-  border-radius: 12px;
-  border: none;
-  font-size: 1rem;
-}
-button {
-  padding: 15px 20px;
-  border: none;
-  border-radius: 12px;
-  cursor: pointer;
-  background: green;
-  color: white;
-}
-#suggestions button {
-  width: 100%;
-  margin: 2px 0;
-  background: #1e293b;
-}
-.header-grid, .guess-row {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
-  text-align: center;
-  margin-top: 10px;
-}
-.header-grid div, .guess-row div {
-  padding: 12px;
-  border-radius: 10px;
-}
-.green { background: green; }
-.red { background: darkred; }
-.yellow { background: goldenrod; }
-.hidden { display: none; }
-#winMessage {
-  text-align: center;
-  background: darkgreen;
-  padding: 20px;
-  border-radius: 20px;
-  margin-bottom: 20px;
-}
+const characters = [
+  { name: "Hermes Vi Britannia", race: "Changeling", kingdom: "Britannia", status: "Vivo" },
+  { name: "Zaros Rhazien Vi Britannia", race: "Vryloka", kingdom: "Britannia", status: "Morto" },
+  { name: "Cedrico Ragnar", race: "Humano", kingdom: "Valhaz", status: "Morto" },
+  { name: "Billy Florence", race: "Humano", kingdom: "Nenhum", status: "Vivo" },
+  { name: "Tehen", race: "Elfo", kingdom: "Nenhum", status: "Vivo" },
+  { name: "Mael Guinvern", race: "Elfo", kingdom: "Nenhum", status: "Morto" },
+  { name: "Zeldris Dreifus", race: "Humano", kingdom: "Atreia", status: "Vivo" },
+  { name: "Julius Vi Britannia", race: "Vryloka", kingdom: "Assuã", status: "Vivo" },
+  { name: "Kojiro Kasaki", race: "Humano", kingdom: "Nenhum", status: "Vivo" },
+  { name: "Alice Grimshaw", race: "Elfo", kingdom: "Nenhum", status: "Morto" },
+  { name: "Morgott Skalgrim", race: "Gigante", kingdom: "Ashen", status: "Vivo" },
+  { name: "Vendrick Valmor", race: "Humano", kingdom: "Reino", status: "Morto" },
+  { name: "Gregory Windsor", race: "Humano", kingdom: "Morrowind", status: "Vivo" },
+  { name: "Nebu Morningstar", race: "Changeling", kingdom: "Britannia", status: "Morto" },
+  { name: "Heimdall Ragnar", race: "Humano", kingdom: "Valhaz", status: "Morto" },
+  { name: "Ryuji Hanzo", race: "Humano", kingdom: "Nenhum", status: "Vivo" },
+  { name: "Noctis Valemont", race: "Changeling", kingdom: "Drakória", status: "Vivo" },
+  { name: "Galius Berkshire", race: "Humano", kingdom: "Drakória", status: "Vivo" },
+  { name: "Syphros Rhazien", race: "Vryloka", kingdom: "Atreia", status: "Vivo" },
+  { name: "Beru Hummel", race: "Humano", kingdom: "Heimar", status: "Vivo" },
+  { name: "Rikigami Tenshou", race: "Humano", kingdom: "Nenhum", status: "Vivo" },
+  { name: "Fynar", race: "Changeling", kingdom: "Britannia", status: "Vivo" },
+  { name: "Rosnov Morningstar", race: "Changeling", kingdom: "Britannia", status: "Vivo" },
+  { name: "Euphemia Rhazien Vi Britannia", race: "Vryloka", kingdom: "Britannia", status: "Vivo" },
+  { name: "George Hummel", race: "Humano", kingdom: "Heimar", status: "Morto" },
+  { name: "Teyocan Pachayoc", race: "Humano", kingdom: "Atreia", status: "Morto" }
+];
