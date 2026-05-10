@@ -4,29 +4,23 @@ body {
   background: linear-gradient(to bottom, #000, #0f172a, #020617);
   color: white;
 }
-
 .container {
-  max-width: 1000px;
+  max-width: 1100px;
   margin: auto;
   padding: 30px;
 }
-
 h1 {
   text-align: center;
   color: gold;
   font-size: 4rem;
+  letter-spacing: 4px;
 }
-
-p {
-  text-align: center;
-}
-
+p { text-align: center; }
 .search-box {
   display: flex;
   gap: 10px;
   margin-bottom: 10px;
 }
-
 input {
   flex: 1;
   padding: 15px;
@@ -34,7 +28,6 @@ input {
   border: none;
   font-size: 1rem;
 }
-
 button {
   padding: 15px 20px;
   border: none;
@@ -42,38 +35,27 @@ button {
   cursor: pointer;
   background: green;
   color: white;
-  font-size: 1.2rem;
 }
-
 #suggestions button {
   width: 100%;
   margin: 2px 0;
   background: #1e293b;
 }
-
-.header-grid,
-.guess-row {
+.header-grid, .guess-row {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 10px;
   text-align: center;
   margin-top: 10px;
 }
-
-.header-grid div,
-.guess-row div {
+.header-grid div, .guess-row div {
   padding: 12px;
   border-radius: 10px;
 }
-
 .green { background: green; }
 .red { background: darkred; }
 .yellow { background: goldenrod; }
-
-.hidden {
-  display: none;
-}
-
+.hidden { display: none; }
 #winMessage {
   text-align: center;
   background: darkgreen;
